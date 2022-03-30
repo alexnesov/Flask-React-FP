@@ -13,10 +13,16 @@ This is a simple app based on react with flask backend
 ### To test
 
 Open browser and hit localhost
+http://localhost/
+
 
 ### To stop
-
 `docker-compose down`
+
+### To list running containers
+`docker ps`
+
+
 
 
 ### Documentation
