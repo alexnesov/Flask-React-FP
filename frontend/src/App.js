@@ -4,12 +4,12 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
-  const [date, setDate] = useState('March 29, 2022')
+  const [date, setDate] = useState('March 20, 2022')
 
   useEffect(() => {
     async function fetchDate() {
       const resp = await axios({
-        url: 'backend:5000/date',
+        url: '/api/date',
         method: 'get'
       })
       setDate(resp.data.date) 
