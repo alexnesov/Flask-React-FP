@@ -4,10 +4,10 @@ COPY package*.json ./
 RUN npm install
 COPY ./public ./public
 COPY ./src ./src
-ENV PORT=80
 RUN npm run build
 
-FROM nginx:latest
+FROM nginx:stable-alpine
 LABEL maintainer="Abdullah"
 COPY --from=frontend-build /app/build/ /usr/share/nginx/html
+COPY deployment/nginx.default.conf /etc/nginx/conf.d/default.conf
 EXPOSE 80
