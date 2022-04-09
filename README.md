@@ -7,7 +7,7 @@ This is a simple app based on react with flask backend
 
 ### To start
 
-`docker-compose up --build -d`
+`docker-compose up --build -d` <br>
 `docker-compose up`
 
 ### To test
@@ -15,6 +15,8 @@ This is a simple app based on react with flask backend
 Open browser and hit localhost
 http://localhost/
 
+<br>
+Tested on Docker version 20.10.14
 
 ### To stop
 `docker-compose down`
