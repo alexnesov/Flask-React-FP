@@ -2,6 +2,7 @@ FROM node:16-alpine as frontend-build
 WORKDIR /app
 COPY package*.json ./
 RUN npm install
+RUN npm install axios
 COPY ./public ./public
 COPY ./src ./src
 RUN npm run build

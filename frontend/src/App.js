@@ -10,7 +10,7 @@ function App() {
 
   useEffect(() => {
     console.log("Fetching data from hello_from_backend ")
-    fetch("/hello_from_backend").then(
+    fetch("http://localhost:5000/hello_from_backend").then(
       res => res.json()
     ).then(
       data => {
