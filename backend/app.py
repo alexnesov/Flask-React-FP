@@ -9,6 +9,13 @@ CORS(app, origins=["http://localhost", "*"])
 def index():
   return 'Backend is healthy'
 
+
+@app.route('/hello_from_backend')
+def hello_from_backend():
+  print('backend called')
+  return {"Hello":["Hello", "From", "Backend"]}
+
+
 @app.route('/api/date')
 def get_current_date():
   today = date.today()
