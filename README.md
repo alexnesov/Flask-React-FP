@@ -1,7 +1,7 @@
-GTS to be run thanks to this fundamental architecture soon.
+FP to be run thanks to this fundamental architecture soon.
 
 
-# Flask-React-GTS
+# Flask-React-FP
 
 This is a simple app based on react with flask backend
 
