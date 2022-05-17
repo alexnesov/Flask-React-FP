@@ -24,6 +24,9 @@ Tested on Docker version 20.10.14
 ### To list running containers
 `docker ps`
 
+### Shutting down all running docker processes
+`docker kill $(docker ps -q)`
+
 
 
 
